@@ -12,6 +12,14 @@
   <!-- Main content area -->
   <div id="main">
     <main id="main-doc">
+      <!-- Use any element to open the sidenav -->
+      <!-- This will be for css hover effect -->
+      <div class="js-container">
+        <img src="https://i.imgur.com/CWts2Vu.png" alt="JavaScript Logo" id="js-logo">
+        <span onclick="openNav()"><div class="js-overlay"></span>
+          <div class="text">Navigation</div>
+        </div>
+      </div>
       <section class="main-section" id="Introduction">
         <header>Introduction</header>
         <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
@@ -229,7 +237,7 @@ MY_OBJECT.key = "otherValue";
   <!-- Site navigation -->
   <div id="mySidenav" class="sidenav">
   <nav id="navbar">
-    <header>JS Documentation</header>
+    <header id="navigation-header">JS DOCUMENTATION</header>
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
     <a href="#Introduction" class="nav-link" rel="internal">Introduction</a>
     <a href="#What_You_Should_Already_Know" class="nav-link" rel="internal">What You Should Already Know</a>
@@ -247,13 +255,12 @@ MY_OBJECT.key = "otherValue";
     <a href="#Reference" class="nav-link" rel="internal">Reference</a>
   </nav>
 </div>
-  <!-- Use any element to open the sidenav -->
-  <span onclick="openNav()"><img src="https://i.imgur.com/CWts2Vu.png" alt="JavaScript Logo" id="js-logo"></span>
+ 
 
   
 
    <!-- FCC Test Suite -->
-   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
    <script src="sidenav.js"></script>
 </body>
 </html>

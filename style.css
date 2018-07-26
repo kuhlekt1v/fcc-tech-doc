@@ -1,3 +1,40 @@
+/* JS-Logo Fade */
+.js-container {
+  position: relative;
+  width: 50%;
+}
+.js-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.js-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(128,128,128,0.3)
+  }
+.js-container:hover .js-overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -21,7 +58,7 @@
   transition: 0.3s;
 }
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #dab92d;
 }
 
 /* Position and style the close button (top right corner) */
@@ -29,7 +66,7 @@
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 50px;
   margin-left: 50px;
 }
 
@@ -65,4 +102,10 @@ code{
   padding:15px;
   margin:10px;
   border-radius:5px;
+}
+
+#navigation-header {
+  color: #dab92d;
+  padding-left: 10px;
+  font-size: 1.5em;
 }
