@@ -3,29 +3,30 @@
   position: relative;
   width: 50%;
 }
-.js-logo {
-  display: block;
-  width: 100%;
+#js-logo {
+  width: 50%;
+  min-width: 150px;
   height: auto;
+  position: relative;
 }
 .js-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 4em;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 30%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(128,128,128,0.3)
   }
 .js-container:hover .js-overlay {
   opacity: 1;
 }
 .text {
-  color: white;
-  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: rgba(110, 110, 110, 0.973);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,6 +36,13 @@
   text-align: center;
 }
 
+/* Click the JS Logo */
+#sub-section{
+  font-family: 'Gaegu', cursive;
+  font-style: italic;
+}
+
+/* Navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -66,7 +74,7 @@
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 50px;
+  font-size: 30px;
   margin-left: 50px;
 }
 
@@ -76,11 +84,7 @@
   padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+/* Main content */
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
@@ -88,7 +92,6 @@ body {
 header{
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
-  font-weight: 
 }
 code{
   display:block;
@@ -103,9 +106,14 @@ code{
   margin:10px;
   border-radius:5px;
 }
-
 #navigation-header {
   color: #dab92d;
   padding-left: 10px;
   font-size: 1.5em;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
 }
