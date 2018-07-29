@@ -10,8 +10,7 @@ function openNav() {
 }
 
 var x = window.matchMedia("(max-width: 450px)")
-openNav(x)
-x.addListener(openNav)
+
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
